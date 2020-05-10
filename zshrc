@@ -5,6 +5,8 @@ source $ZSH/oh-my-zsh.sh
 
 ### Personal config
 export SHELL=/usr/local/bin/zsh
+export HISTFILE=~/.eternal_shell_history
+
 
 ## Prompt
 
