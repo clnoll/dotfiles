@@ -19,5 +19,4 @@ PROMPT+='%{$fg[red]%}$(__git_ps1 "(%s)")%{$reset_color%} '
 
 
 ## Aliases
-source ~/src/3p/dan-shell-config/alias.sh
-alias awl='aws-google-auth -u catherine@happybits.co -R us-west-2 -S 769963690706 -I C036hqtf8 -a --resolve-aliases -p prod'
+source ~/dotfiles/alias.sh
