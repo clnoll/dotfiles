@@ -48,7 +48,7 @@ alias gbdh='git branch-by-date|head'
 alias gbda='git branch-by-date'
 alias gbl='git blame'
 alias gc='git checkout'
-gcf () { git checkout "$@" || git-fetch-branch "$@" ; }
+# gcf () { git checkout "$@" || git-fetch-branch "$@" ; }
 alias gcbz='git branch -D z 2> /dev/null ; git checkout -b z'
 alias gconf='git config'
 alias gconfl='git config -l'
