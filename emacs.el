@@ -4,15 +4,22 @@
 (use-package projectile)
 (use-package helm-projectile)
 
+(use-package emacs
+  :bind (([(super s)] . save-buffer)))
+
 (use-package magit
   :config
-  (setq magit-diff-refine-hunk 'all))
+  (setq magit-diff-refine-hunk 'all)
+  :bind (:map magit-status-mode-map
+	      ([down] . next-line)
+	      ([up] . previous-line)))
 
 (use-package xterm-color)
 
 (use-package magit-delta
   :load-path "~/src/3p/magit-delta"
   :config
+  (add-to-list 'magit-delta-delta-args "--light")
   (magit-delta-mode +1))
 
 
@@ -60,20 +67,10 @@
 (setq helm-full-frame t)
 (setq dan/ignored-patterns nil)
 
-;;; Yasnippet
-(require 'yasnippet)
-(setq yas/trigger-key [tab])
-(define-key yas/keymap [tab] 'yas/next-field)
-(yas/initialize)
-(defun dan/yas-load ()
-  (interactive)
-  (yas/load-directory "/Users/catherine/configfiles/emacs-snippets"))
-(dan/yas-load)
 
 
 ;; multiple cursors
 (advice-add 'mc/edit-lines :before (lambda (&rest args) (previous-logical-line 1 nil)))
-
 
 ;; misc configuration
 (setq vc-follow-symlinks t)
@@ -82,9 +79,9 @@
 (setq make-backup-files nil)
 (delete-selection-mode)
 (setq create-lockfiles nil)
-
-(dan/set-exec-path-from-shell)
-
+(use-package emacs
+  :bind (([super s] . save-buffer)
+	 ([(super v)] . yank)))
 
 ;; latex
 (defun dan/latex-mode-hook-fn ()
@@ -97,13 +94,6 @@
 
 ;; (setq exec-path
 ;;       (append '("/usr/local/texlive/2016basic/bin/x86_64-darwin") exec-path))
-
-
-(dan/register-key-bindings
- '(outline-minor-mode-map
-   .
-   (([(control tab)] . org-cycle)
-    ([(backtab)] . org-global-cycle))))
 
 
 ;; mode hooks
@@ -126,24 +116,6 @@
   (beginning-of-line)
   (kill-line))
 
-;; key bindings
-;; Look at https://github.com/dandavison/emacs-config/blob/master/emacs.el#L262
-;; for examples of setting key bindings.
-
-(dan/register-key-bindings
- '(global-map
-   .
-   (("\C-cg" . magit-status)
-    ("\C-xd" . dan/dired-no-ask)
-    ([(super ?i)] . dan/insert-ipdb-set-trace)
-    ("\C-x\C-f" . dan/find-file)
-    ([(backtab)] . dan/indent-shift-left)
-    ([(super ?>)] . dan/helm-projectile-grep-no-input)
-    ([(super ?.)] . dan/helm-projectile-grep-thing-at-point)
-    ([(super /)] . comment-or-uncomment-region-or-line)
-    ([(super ?,)] . (lambda () (interactive) (find-file (file-chase-links "~/.emacs.d/init.el")))))))
-
-
 ;; Hack to make tab indent the region when the region is active, and
 ;; maintain the active region afterwards.
 (advice-add 'indent-for-tab-command :after
@@ -152,14 +124,6 @@
 		(exchange-point-and-mark))))
 (setq indent-region-function 'dan/indent-shift-right)
 
-
-;; Python
-(require 'python)
-(dan/register-key-bindings
- '("python" .
-   (
-    ;; insert pairs for python bindings here
-    )))
 
 (defun python-hook-function ()
   (jedi:setup)
@@ -191,7 +155,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (eglot magit xterm-color libgit dockerfile-mode go-mode helm-swoop markdown-mode paredit undo-tree yasnippet use-package railscasts-theme helm-projectile))))
+    (rust-mode eglot magit xterm-color libgit dockerfile-mode go-mode helm-swoop markdown-mode paredit undo-tree yasnippet use-package railscasts-theme helm-projectile))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
