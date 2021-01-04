@@ -1,0 +1,6 @@
+{
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.minimap.enabled": false,
+    "editor.formatOnSave": true,
+    "workbench.statusBar.visible": false
+}

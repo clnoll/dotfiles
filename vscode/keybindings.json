@@ -1,0 +1,44 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+f",
+        "command": "workbench.action.findInFiles"
+    },
+    {
+        "key": "shift+cmd+f",
+        "command": "-workbench.action.findInFiles"
+    },
+    {
+        "key": "cmd+h",
+        "command": "workbench.action.toggleMultiCursorModifier"
+    },
+    {
+        "key": "ctrl+x ctrl+f",
+        "command": "filesExplorer.findInWorkspace"
+    },
+    {
+        "key": "ctrl+x ctrl+f",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "cmd+p",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "shift+cmd+\\",
+        "command": "workbench.action.splitEditor"
+    },
+    {
+        "key": "cmd+\\",
+        "command": "-workbench.action.splitEditor"
+    },
+    {
+        "key": "shift+cmd+,",
+        "command": "workbench.action.closeSidebar"
+    },
+    {
+        "key": "cmd+g",
+        "command": "workbench.action.tasks.runTask",
+        "args": "magit-status"
+    }
+]
