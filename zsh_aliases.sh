@@ -73,7 +73,7 @@ alias gdw='git diff --word-diff=color'
 alias gds='git diff --stat=200,200'
 alias gg='git grep'
 alias ghci='ghci -fwarn-incomplete-patterns'
-alias gl='git log1'
+alias gl='git log'
 alias gl1='gl -n1'
 alias gls='gl --stat'
 alias glme='gl --author=dan'
@@ -167,12 +167,7 @@ alias v=vpn
 alias vssh='vagrant ssh'
 alias vpro='vagrant provision'
 
-if [[ -n ${ZSH_VERSION-} ]]; then
-    alias hist='tac ~/.zsh_history'
-    alias thg='tac ~/.zsh_history | grep'
-else
-    alias hist='tac ~/.bash_eternal_history'
-fi
+alias hist='tac ~/.eternal_shell_history'
 
 if [ $(uname) = "Darwin" ] ; then
     alias hibernateon="sudo pmset -a hibernatemode 5"

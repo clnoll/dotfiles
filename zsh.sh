@@ -10,8 +10,9 @@ source ~/dotfiles/zsh_aliases.sh
 export SHELL=/usr/local/bin/zsh
 export HISTFILE=~/.eternal_shell_history
 export PATH=~/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/opt/X11/bin:~/joya/mc-web/N/google-cloud-sdk/bin:~/.cargo/bin:/Applications/SnowSQL.app/Contents/MacOS:$PATH
+export EDITOR="emacs -nw -q"
 
 [ -n "$TMUX" ] && tmux set-option prefix C-z >/dev/null
 
-unsetopt share_history
+# unsetopt share_history
 

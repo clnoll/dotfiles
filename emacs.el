@@ -10,17 +10,20 @@
 (use-package magit
   :config
   (setq magit-diff-refine-hunk 'all)
-  :bind (:map magit-status-mode-map
-	      ([down] . next-line)
-	      ([up] . previous-line)))
+  ;; :bind (:map magit-status-mode-map
+  ;; 	      ([down] . next-line)
+  ;; 	      ([up] . previous-line))
+  )
 
 (use-package xterm-color)
+
 
 (use-package magit-delta
   :load-path "~/src/3p/magit-delta"
   :config
   (add-to-list 'magit-delta-delta-args "--light")
-  (magit-delta-mode +1))
+  (add-hook 'magit-mode-hook (lambda () magit-delta-mode +1))
+  (setq magit-delta-delta-executable "/Users/catherine/bin/delta"))
 
 
 (use-package undo-tree
@@ -155,7 +158,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (rust-mode eglot magit xterm-color libgit dockerfile-mode go-mode helm-swoop markdown-mode paredit undo-tree yasnippet use-package railscasts-theme helm-projectile))))
+    (magit rust-mode eglot xterm-color libgit dockerfile-mode go-mode helm-swoop markdown-mode paredit undo-tree yasnippet use-package railscasts-theme helm-projectile))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
