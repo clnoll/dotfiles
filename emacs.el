@@ -17,13 +17,13 @@
 
 (use-package xterm-color)
 
-
 (use-package magit-delta
-  :load-path "~/src/3p/magit-delta"
+  :after magit
   :config
   (add-to-list 'magit-delta-delta-args "--light")
-  (add-hook 'magit-mode-hook (lambda () magit-delta-mode +1))
-  (setq magit-delta-delta-executable "/Users/catherine/bin/delta"))
+  (add-to-list 'magit-delta-delta-args "--no-gitconfig")
+  (add-hook 'magit-mode-hook (lambda () (magit-delta-mode +1)))
+  (setq magit-delta-delta-executable "~/bin/delta"))
 
 
 (use-package undo-tree
