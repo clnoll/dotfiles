@@ -37,8 +37,164 @@
         "command": "workbench.action.closeSidebar"
     },
     {
+        "key": "shift+cmd+p",
+        "command": "workbench.action.showCommands"
+    },
+    {
         "key": "cmd+g",
         "command": "workbench.action.tasks.runTask",
         "args": "magit-status"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.gotoLine"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "-workbench.action.gotoLine"
+    },
+    {
+        "key": "cmd+w",
+        "command": "workbench.action.closeWindow"
+    },
+    {
+        "key": "shift+cmd+w",
+        "command": "-workbench.action.closeWindow"
+    },
+    {
+        "key": "shift+cmd+w",
+        "command": "breadcrumbs.focusAndSelect",
+        "when": "breadcrumbsPossible"
+    },
+    {
+        "key": "shift+cmd+.",
+        "command": "-breadcrumbs.focusAndSelect",
+        "when": "breadcrumbsPossible"
+    },
+    {
+        "key": "shift+cmd+w",
+        "command": "breadcrumbs.toggleToOn",
+        "when": "!config.breadcrumbs.enabled"
+    },
+    {
+        "key": "shift+cmd+.",
+        "command": "-breadcrumbs.toggleToOn",
+        "when": "!config.breadcrumbs.enabled"
+    },
+    {
+        "key": "shift+cmd+.",
+        "command": "workbench.view.extensions",
+        "when": "viewContainer.workbench.view.extensions.enabled"
+    },
+    {
+        "key": "shift+cmd+x",
+        "command": "-workbench.view.extensions",
+        "when": "viewContainer.workbench.view.extensions.enabled"
+    },
+    {
+        "key": "shift+cmd+x",
+        "command": "python.execInTerminal"
+    },
+    {
+        "key": "shift+cmd+=",
+        "command": "workbench.action.zoomIn"
+    },
+    {
+        "key": "cmd+numpad_add",
+        "command": "-workbench.action.zoomIn"
+    },
+    {
+        "key": "shift+cmd+-",
+        "command": "workbench.action.splitEditorDown"
+    },
+    {
+        "key": "cmd+w",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "cmd+w",
+        "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "cmd+w cmd+w",
+        "command": "workbench.action.closeGroup",
+        "when": "activeEditorGroupEmpty && multipleEditorGroups"
+    },
+    {
+        "key": "cmd+w",
+        "command": "-workbench.action.closeGroup",
+        "when": "activeEditorGroupEmpty && multipleEditorGroups"
+    },
+    {
+        "key": "shift+cmd+o shift+cmd+o",
+        "command": "workbench.action.reopenClosedEditor"
+    },
+    {
+        "key": "shift+cmd+t",
+        "command": "-workbench.action.reopenClosedEditor"
+    },
+    {
+        "key": "cmd+alt+e",
+        "command": "workbench.output.action.clearOutput"
+    },
+    {
+        "key": "cmd+down",
+        "command": "workbench.action.closePanel"
+    },
+    {
+        "key": "cmd+up",
+        "command": "terminal.focus"
+    },
+    {
+        "key": "cmd+alt+left",
+        "command": "workbench.panel.repl.view.focus",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+alt+left",
+        "command": "workbench.panel.output.focus",
+        "when": "inDebugRepl"
+    },
+    {
+        "key": "cmd+alt+left",
+        "command": "workbench.action.problems.focus",
+        "when": "inOutput"
+    },
+    {
+        "key": "cmd+alt+right",
+        "command": "workbench.panel.output.focus",
+        "when": "problemFocus"
+    },
+    {
+        "key": "cmd+alt+right",
+        "command": "workbench.panel.repl.view.focus",
+        "when": "inOutput"
+    },
+    {
+        "key": "cmd+alt+right",
+        "command": "terminal.focus",
+        "when": "inDebugRepl"
+    },
+    {
+        "key": "cmd+alt+left",
+        "command": "workbench.action.navigateBack",
+        "when": "!panelFocus"
+    },
+    {
+        "key": "cmd+alt+right",
+        "command": "workbench.action.navigateForward",
+        "when": "!panelFocus"
+    },
+    {
+        "key": "cmd+r cmd+t",
+        "command": "python.selectAndRunTestMethod"
+    },
+    {
+        "key": "cmd+r cmd+t",
+        "command": "testing.runAtCursor"
+    },
+    {
+        "key": "cmd+d cmd+t",
+        "command": "testing.debugAtCursor"
     }
 ]
