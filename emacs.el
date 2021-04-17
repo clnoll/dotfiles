@@ -26,6 +26,29 @@
   (setq magit-delta-delta-executable "~/bin/delta"))
 
 
+;; Hack to extend magit-delta colors to right margin.
+;; Delete this if not using light (GitHub) theme.
+(with-eval-after-load 'magit-delta
+    (set-face-attribute 'magit-diff-added-highlight nil
+              :background "#d0ffd0")
+    (set-face-attribute 'magit-diff-added nil
+              :background "#d0ffd0")
+    (set-face-attribute 'magit-diff-removed-highlight nil
+              :background "#ffe0e0")
+    (set-face-attribute 'magit-diff-removed nil
+              :background "#ffe0e0"))
+
+(add-hook 'magit-delta-mode-hook
+            (lambda ()
+              (setq face-remapping-alist
+                    (seq-difference face-remapping-alist
+                                    '((magit-diff-removed . default)
+                                      (magit-diff-removed-highlight . default)
+                                      (magit-diff-added . default)
+                                      (magit-diff-added-highlight . default))))))
+;; end hack
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 (use-package undo-tree
   :config
   (undo-tree-mode 1))
@@ -153,12 +176,10 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   (quote
-    ("3b0a350918ee819dca209cec62d867678d7dac74f6195f5e3799aa206358a983" default)))
+   '("3b0a350918ee819dca209cec62d867678d7dac74f6195f5e3799aa206358a983" default))
  '(inhibit-startup-screen t)
  '(package-selected-packages
-   (quote
-    (magit rust-mode eglot xterm-color libgit dockerfile-mode go-mode helm-swoop markdown-mode paredit undo-tree yasnippet use-package railscasts-theme helm-projectile))))
+   '(magit-delta magit rust-mode eglot xterm-color libgit dockerfile-mode go-mode helm-swoop markdown-mode paredit undo-tree yasnippet use-package railscasts-theme helm-projectile)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
