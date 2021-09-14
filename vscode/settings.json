@@ -2,14 +2,15 @@
     "editor.minimap.enabled": false,
     "editor.formatOnSave": true,
     "rust-analyzer.inlayHints.typeHints": false,
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
     "workbench.activityBar.visible": false,
     "python.languageServer": "Pylance",
     "editor.quickSuggestionsDelay": 10000,
-    "editor.fontSize": 11.5
+    "editor.fontSize": 11.5,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    }
 }

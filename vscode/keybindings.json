@@ -33,10 +33,6 @@
         "command": "-workbench.action.splitEditor"
     },
     {
-        "key": "shift+cmd+,",
-        "command": "workbench.action.closeSidebar"
-    },
-    {
         "key": "shift+cmd+p",
         "command": "workbench.action.showCommands"
     },
@@ -64,11 +60,6 @@
     {
         "key": "shift+cmd+w",
         "command": "breadcrumbs.focusAndSelect",
-        "when": "breadcrumbsPossible"
-    },
-    {
-        "key": "shift+cmd+.",
-        "command": "-breadcrumbs.focusAndSelect",
         "when": "breadcrumbsPossible"
     },
     {
@@ -237,5 +228,13 @@
         "key": "alt+.",
         "command": "editor.action.revealDefinition",
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "shift+cmd+right shift+cmd+right",
+        "command": "workbench.action.showNextWindowTab"
+    },
+    {
+        "key": "shift+cmd+left shift+cmd+left",
+        "command": "workbench.action.showPreviousWindowTab"
     },
 ]
