@@ -25,6 +25,14 @@
   (add-hook 'magit-mode-hook (lambda () (magit-delta-mode +1)))
   (setq magit-delta-delta-executable "~/bin/delta"))
 
+(defun dan/magit-kill-buffers ()
+  (interactive)
+  (mapc (lambda (buffer)
+          (and (string-match-p "magit" (buffer-name buffer))
+               (kill-buffer buffer)))
+        (buffer-list))
+  (magit-status))
+
 
 ;; Hack to extend magit-delta colors to right margin.
 ;; Delete this if not using light (GitHub) theme.
