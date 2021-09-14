@@ -6,6 +6,7 @@ source $ZSH/oh-my-zsh.sh
 ### Personal config
 source ~/dotfiles/zsh_prompt.sh
 source ~/dotfiles/zsh_aliases.sh
+source ~/dotfiles/lib.sh
 
 export SHELL=/usr/local/bin/zsh
 export HISTFILE=~/.eternal_shell_history
