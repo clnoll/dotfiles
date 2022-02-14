@@ -1,6 +1,6 @@
 ### oh-my-zsh config
 export ZSH="/Users/catherine/.oh-my-zsh"
-export ARCH=$(arch)
+export SHELL_ARCH=$(arch)
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
@@ -13,7 +13,7 @@ source ~/dotfiles/lib.sh
 export HISTFILE=~/.eternal_shell_history
 export PATH=/opt/X11/bin:~/joya/mc-web/N/google-cloud-sdk/bin:~/.cargo/bin:/Applications/SnowSQL.app/Contents/MacOS:$PATH
 
-if [ $ARCH = "i386" ]
+if [ $SHELL_ARCH = "i386" ]
 then
     export SHELL=/usr/local/bin/zsh
     export PATH=~/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:$PATH
