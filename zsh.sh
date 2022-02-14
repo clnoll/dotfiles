@@ -42,3 +42,5 @@ function insert-fzf-path-in-command-line() {
 
 zle -N insert-fzf-path-in-command-line
 bindkey "^F" insert-fzf-path-in-command-line
+
+eval "$(pyenv init --path)"
