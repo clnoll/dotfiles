@@ -27,7 +27,7 @@ fi
 
 export EDITOR="emacs -nw -q"
 
-[ -n "$TMUX" ] && tmux set-option prefix C-z >/dev/null
+[ -n "$TMUX" ] && $TMUX_EXECUTABLE set-option prefix C-z >/dev/null
 
 # unsetopt share_history
 
