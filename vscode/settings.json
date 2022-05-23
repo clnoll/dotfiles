@@ -12,5 +12,6 @@
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
-    }
+    },
+    "editor.inlineSuggest.enabled": true
 }
