@@ -189,10 +189,6 @@
         "key": "cmd+r cmd+t",
         "command": "testing.runAtCursor"
     },
-    {
-        "key": "cmd+d cmd+t",
-        "command": "testing.debugAtCursor"
-    },
     // Search result navigation (default bindings: f4 and shift+f4)
     {
         "key": "ctrl+down",
