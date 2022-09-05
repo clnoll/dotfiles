@@ -233,4 +233,8 @@
         "key": "shift+cmd+left shift+cmd+left",
         "command": "workbench.action.showPreviousWindowTab"
     },
+    {
+        "key": "ctrl+k",
+        "command": "emacs-mcx.paredit.pareditKill"
+    },
 ]
