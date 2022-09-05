@@ -4,6 +4,7 @@ alias agp='ag --python'
 alias awl='aws-google-auth -u catherine@happybits.co -R us-west-2 -S 769963690706 -I C036hqtf8 -a --resolve-aliases -p prod'
 alias beh='tac ~/.bash_eternal_history'
 alias c='cat'
+alias cat='bat'
 alias cb='cargo build'
 alias cdt='cd "$_"'
 cdp () { mkdir -p "$1" && cd "$1";}
