@@ -12,7 +12,7 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 export HISTFILE=~/.eternal_shell_history
-export PATH=/opt/X11/bin:~/joya/mc-web/N/google-cloud-sdk/bin:~/.cargo/bin:/Applications/SnowSQL.app/Contents/MacOS:$PATH
+export PATH=/opt/X11/bin:~/joya/mc-web/N/google-cloud-sdk/bin:~/.cargo/bin:/Applications/SnowSQL.app/Contents/MacOS:/opt/homebrew/bin/cmake:$PATH
 
 if [ $SHELL_ARCH = "i386" ]
 then
