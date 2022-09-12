@@ -7,6 +7,7 @@
         "0xf703-0x320000" : {
           "Text" : "0x1a 0x70",
           "Action" : 11,
+      "Command": "/Users/catherine/bin/nu",
           "Description": "Next window"
         },
         "0x73-0x100000" : {
