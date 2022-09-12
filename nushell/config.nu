@@ -511,3 +511,7 @@ let-env config = {
   ]
 }
 
+let-env NU_LIB_DIRS = [
+  ($nu.config-path | path dirname | path expand)
+]
+source '~/dotfiles/nushell/init.nu'

@@ -1,0 +1,1 @@
+/Users/catherine/src/3p/nu_scripts/prompt/async_git_prompt/async-git-prompt.nu
