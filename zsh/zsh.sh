@@ -5,8 +5,8 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 ### Personal config
-source ~/dotfiles/zsh_prompt.sh
-source ~/dotfiles/zsh_aliases.sh
+source ~/dotfiles/zsh/prompt.sh
+source ~/dotfiles/zsh/aliases.sh
 source ~/dotfiles/lib.sh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -18,16 +18,16 @@ if [ $SHELL_ARCH = "i386" ]
 then
     export SHELL=/usr/local/bin/zsh
     export PATH=~/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:$PATH
-    export TMUX_EXECUTABLE=~/src/3p/tmux/tmux_x86
+    # export TMUX_EXECUTABLE=~/src/3p/tmux/tmux_x86
 else
     export SHELL=/opt/homebrew/bin/zsh
     export PATH=~/bin:/opt/homebrew/opt/coreutils/libexec/gnubin:/opt/homebrew/bin:$PATH
-    export TMUX_EXECUTABLE=~/src/3p/tmux/tmux_arm
+    # export TMUX_EXECUTABLE=~/src/3p/tmux/tmux_arm
 fi
 
 export EDITOR="emacs -nw -q"
 
-[ -n "$TMUX" ] && $TMUX_EXECUTABLE set-option prefix C-z >/dev/null
+ [ -n "$TMUX" ] && $TMUX_EXECUTABLE set-option prefix C-z >/dev/null
 
 # unsetopt share_history
 
