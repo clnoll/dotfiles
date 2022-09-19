@@ -454,7 +454,7 @@ cursor:
 #     - -c
 #     - /Users/ddavison/bin/nu
 shell:
-  program: /Users/catherine/bin/nu
+  program: /opt/homebrew/bin/tmux
 
 # Startup directory
 #
