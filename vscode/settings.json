@@ -17,3 +17,30 @@
 }
     "python.formatting.provider": "black",
     "errorLens.enabled": true,
+    "settings.cycle": [
+        {
+            "id": "formatOnSave",
+            "overrideWorkspaceSettings": true,
+            "values": [
+                {
+                    "editor.formatOnSave": true
+                },
+                {
+                    "editor.formatOnSave": false
+                }
+            ]
+        },
+        {
+            "id": "errorLens",
+            "overrideWorkspaceSettings": true,
+            "values": [
+                {
+                    "errorLens.enabled": true
+                },
+                {
+                    "errorLens.enabled": false
+                }
+            ]
+        }
+    ]
+}
