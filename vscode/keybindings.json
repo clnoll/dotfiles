@@ -237,4 +237,14 @@
         "key": "ctrl+k",
         "command": "emacs-mcx.paredit.pareditKill"
     },
+    {
+        "key": "ctrl+x f",
+        "command": "settings.cycle.formatOnSave",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+x e",
+        "command": "settings.cycle.errorLens",
+        "when": "editorFocus"
+    }
 ]

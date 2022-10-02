@@ -16,3 +16,4 @@
     "editor.inlineSuggest.enabled": true
 }
     "python.formatting.provider": "black",
+    "errorLens.enabled": true,
