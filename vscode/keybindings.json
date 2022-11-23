@@ -134,10 +134,6 @@
     },
     {
         "key": "cmd+up",
-        "command": "terminal.focus"
-    },
-    {
-        "key": "cmd+up",
         "command": "workbench.action.toggleMaximizedPanel",
         "when": "panelFocus"
     },

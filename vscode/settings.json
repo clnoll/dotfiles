@@ -1,7 +1,6 @@
 {
     "editor.minimap.enabled": false,
     "editor.formatOnSave": true,
-    "rust-analyzer.inlayHints.typeHints": false,
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
@@ -13,10 +12,25 @@
         "default": "right",
         "jupyter-notebook": "left"
     },
-    "editor.inlineSuggest.enabled": true
-}
     "python.formatting.provider": "black",
-    "errorLens.enabled": true,
+    "editor.inlineSuggest.enabled": true,
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": false,
+        "properties": false,
+        "rust": false
+    },
+    "editor.multiCursorModifier": "ctrlCmd",
+    "cmake.configureOnOpen": true,
+    "workbench.colorTheme": "nushell",
+    "workbench.editor.untitled.hint": "hidden",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "errorLens.enabled": false,
     "settings.cycle": [
         {
             "id": "formatOnSave",
@@ -42,5 +56,6 @@
                 }
             ]
         }
-    ]
+    ],
+    "go.toolsManagement.autoUpdate": true
 }
