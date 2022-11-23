@@ -802,6 +802,11 @@ key_bindings:
 
   - {key: Slash, mods: Command, action: ToggleSimpleFullscreen}
 
+  - { key: PageUp,   mods: Shift,   action: ScrollPageUp   }
+  - { key: PageDown, mods: Shift,   action: ScrollPageDown }
+  - { key: End,      mods: Shift,   action: ScrollToBottom }
+  - { key: Home,     mods: Shift,   action: ScrollToTop    }
+
   #- { key: Paste,                                       action: Paste          }
   #- { key: Copy,                                        action: Copy           }
   #- { key: L,         mods: Control,                    action: ClearLogNotice }
