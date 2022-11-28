@@ -15,6 +15,7 @@ export PATH=/opt/X11/bin:~/.cargo/bin:/Applications/SnowSQL.app/Contents/MacOSå
 export PATH=~/bin:/opt/homebrew/opt/coreutils/libexec/gnubin:/opt/homebrew/bin:$PATH
 export SHELL=/opt/homebrew/bin/zsh
 export TMUX_EXECUTABLE=/opt/homebrew/bin/tmux
+export GIT_CONFIG_GLOBAL=~/dotfiles/gitconfig
 
 export EDITOR="emacs -nw -q"
 

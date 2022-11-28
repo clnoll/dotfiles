@@ -1,0 +1,44 @@
+[user]
+	name = Catherine Noll
+	email = noll.catherine@gmail.com
+
+[merge]
+	conflictstyle = diff3
+
+
+[alias]
+   state = "! git rev-parse --abbrev-ref HEAD; git rev-parse HEAD; (git diff; git diff --cached) | md5sum -"
+
+[core]
+    attributesfile = /Users/catherine/dotfiles/.gitattributes
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[diff]
+    colorMoved = default
+    
+[include]
+    path = /Users/catherine/src/3p/delta/themes.gitconfig
+
+[delta]
+    features = collared-trogon
+    side-by-side = false
+    navigate = true
+    hyperlinks = true
+    line-numbers = true
+    # grep-match-style = ...
+    grep-match-file-style = blue
+    # grep-match-line-number-style = 
+    # blame-palette = ...
+
+
+
+
+    # Loads global config from GIT_CONFIG_GLOBAL environment variable
+    # if present. Also avoids reading the $HOME/.gitconfig or
+    # $XDG_CONFIG_HOME/git/config files if GIT_CONFIG_GLOBAL is set,
+    # per https://git-scm.com/docs/git#Documentation/git.txt-codeGITCONFIGGLOBALcode
+[init]
+	defaultBranch = main
