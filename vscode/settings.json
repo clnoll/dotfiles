@@ -28,7 +28,8 @@
     "workbench.colorTheme": "nushell",
     "workbench.editor.untitled.hint": "hidden",
     "[python]": {
-        "editor.defaultFormatter": "ms-python.python"
+        "editor.defaultFormatter": "ms-python.python",
+        "editor.formatOnType": true
     },
     "errorLens.enabled": false,
     "settings.cycle": [

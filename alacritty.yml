@@ -469,7 +469,13 @@ cursor:
 #     - -c
 #     - /Users/ddavison/bin/nu
 shell:
-  program: /opt/homebrew/bin/tmux
+  # program: /opt/homebrew/bin/tmux
+  program: /Users/catherine/bin/tmux
+  args:
+    - new-session
+    - -A
+    - -s
+    - '0'
 
 # Startup directory
 #
@@ -544,6 +550,13 @@ shell:
   #    binding:
   #      key: U
   #      mods: Control|Shift
+hints:
+  enabled:
+    - hyperlinks: true
+      command: open
+      binding:
+        mods: Command
+        key: Period
 
 # Mouse bindings
 #

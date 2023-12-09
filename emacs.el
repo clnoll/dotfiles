@@ -187,7 +187,8 @@
    '("3b0a350918ee819dca209cec62d867678d7dac74f6195f5e3799aa206358a983" default))
  '(inhibit-startup-screen t)
  '(package-selected-packages
-   '(magit-delta magit rust-mode eglot xterm-color libgit dockerfile-mode go-mode helm-swoop markdown-mode paredit undo-tree yasnippet use-package railscasts-theme helm-projectile)))
+   '(magit-delta magit rust-mode eglot xterm-color libgit dockerfile-mode go-mode helm-swoop markdown-mode paredit undo-tree yasnippet use-package railscasts-theme helm-projectile))
+ '(warning-suppress-types '((mule) (mule))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
