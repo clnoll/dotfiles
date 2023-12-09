@@ -16,6 +16,8 @@ export PATH=~/bin:/opt/homebrew/opt/coreutils/libexec/gnubin:/opt/homebrew/bin:$
 export SHELL=/opt/homebrew/bin/zsh
 export TMUX_EXECUTABLE=/opt/homebrew/bin/tmux
 export GIT_CONFIG_GLOBAL=~/dotfiles/gitconfig
+export BAT_THEME=Dracula
+export GIT_SEQUENCE_EDITOR=emacsclient
 
 export EDITOR="emacs -nw -q"
 
@@ -37,3 +39,21 @@ zle -N insert-fzf-path-in-command-line
 bindkey "^F" insert-fzf-path-in-command-line
 
 eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+
+export PATH=/opt/homebrew/opt/node@16/bin:$PATH
+export DOCKER_BUILD_PLATFORM=linux/arm64
+export DOCKER_BUILD_ARCH=arm64
+export ALPINE_IMAGE=arm64v8/alpine:3.14
+export POSTGRES_IMAGE=arm64v8/postgres:13-alpine
+export JDK_VERSION=17
+export CARGO_BUILD_TARGET=aarch64-apple-darwin
+
+
+function pycharm() {
+    /Applications/PyCharm.app/Contents/MacOS/pycharm "$@" 1>/dev/null 2>/dev/null
+}
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
