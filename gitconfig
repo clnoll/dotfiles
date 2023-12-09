@@ -23,10 +23,13 @@
     path = /Users/catherine/src/3p/delta/themes.gitconfig
 
 [delta]
+    # color-only = true
     features = collared-trogon
+    color-moved = true
     side-by-side = false
     navigate = true
     hyperlinks = true
+    hyperlinks-file-link-format = "pycharm://open?file={path}&line={line}"
     line-numbers = true
     # grep-match-style = ...
     grep-match-file-style = blue
