@@ -34,7 +34,6 @@ alias ep='emacs_pipe'
 alias ee="emacs -nw -q"
 alias ef='efind'
 alias eg='egit'
-egt () { gt "$1" && e "$1" ; }
 alias f='find'
 alias fromip="who | grep \"^$USER\" | sed 1q | perl -n -e 's,.*\(([0-9.]+)\),\1, and print'"
 alias virtualenv-temp='rm -fr /tmp/v && virtualenv /tmp/v && . /tmp/v/bin/activate'
@@ -104,7 +103,6 @@ alias gstr='git stash save && git stash drop stash@{1}'
 alias gstsp='git stash show -p'
 alias gstl='git stash list'
 alias gss='git show --stat=120,120'
-gt () { touch "$1" && git add "$1" ; }
 alias glh='git log --oneline -n 20'
 alias grb='git rebase'
 alias grba='git rebase --abort'
@@ -179,7 +177,6 @@ else
     alias s='sync-dirs'
     alias ps2pdf='ps2pdf -dAutoRotatePages=/None'
     alias mutt='LANG=en mutt -y'
-    alias gt='gthumb'
     alias exit='sync-history ; builtin exit'
     alias fusermount='fusermount -uz'
     alias mu='mutt'

@@ -120,10 +120,6 @@ scrolling:
   # To disable this completely, set `faux_multiplier` to 0.
   faux_multiplier: 0
 
-  # Automatically scroll to the bottom when new text is written
-  # to the terminal.
-  auto_scroll: false
-
 # Font configuration
 # defaults -currentHost write -g AppleFontSmoothing -int 0
 font:

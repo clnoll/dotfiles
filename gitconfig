@@ -33,9 +33,10 @@
     line-numbers = true
     # grep-match-style = ...
     grep-match-file-style = blue
+    max-line-length = 0
     # grep-match-line-number-style = 
     # blame-palette = ...
-
+    zero-style = 'dim'
 
 
 
