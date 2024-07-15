@@ -18,6 +18,7 @@ export TMUX_EXECUTABLE=/opt/homebrew/bin/tmux
 export GIT_CONFIG_GLOBAL=~/dotfiles/gitconfig
 export BAT_THEME=Dracula
 export GIT_SEQUENCE_EDITOR=emacsclient
+export GH_PAGER=delta
 
 export EDITOR="emacs -nw -q"
 
