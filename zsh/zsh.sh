@@ -19,6 +19,7 @@ export GIT_CONFIG_GLOBAL=~/dotfiles/gitconfig
 export BAT_THEME=Dracula
 export GIT_SEQUENCE_EDITOR=emacsclient
 export GH_PAGER=delta
+export POETRY_VIRTUALENVS_IN_PROJECT=true
 
 export EDITOR="emacs -nw -q"
 
