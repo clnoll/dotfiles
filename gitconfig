@@ -37,8 +37,8 @@
     # grep-match-line-number-style = 
     # blame-palette = ...
     zero-style = 'dim'
-
-
+    relative-paths = true
+    diff-stat-align-width = 100
 
     # Loads global config from GIT_CONFIG_GLOBAL environment variable
     # if present. Also avoids reading the $HOME/.gitconfig or
