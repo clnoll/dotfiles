@@ -49,7 +49,6 @@ export DOCKER_BUILD_ARCH=arm64
 export ALPINE_IMAGE=arm64v8/alpine:3.14
 export POSTGRES_IMAGE=arm64v8/postgres:13-alpine
 export JDK_VERSION=17
-export CARGO_BUILD_TARGET=aarch64-apple-darwin
 
 
 function pycharm() {
