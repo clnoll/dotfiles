@@ -108,7 +108,6 @@
 
 ;; misc configuration
 (setq vc-follow-symlinks t)
-(global-linum-mode 1)
 (setq truncate-lines t)
 (setq make-backup-files nil)
 (delete-selection-mode)

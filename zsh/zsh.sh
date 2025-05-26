@@ -7,7 +7,6 @@ source $ZSH/oh-my-zsh.sh
 source ~/dotfiles/zsh/prompt.sh
 source ~/dotfiles/zsh/aliases.sh
 source ~/dotfiles/lib.sh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 export HISTFILE=~/.eternal_shell_history

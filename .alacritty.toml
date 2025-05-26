@@ -1,0 +1,121 @@
+[cursor.style]
+shape = "Beam"
+
+[env]
+TERM = "xterm-256color"
+
+[font.normal]
+family = "Monaco"
+style = "Regular"
+
+[[hints.enabled]]
+command = "open"
+hyperlinks = true
+
+[hints.enabled.binding]
+key = "Period"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001A\u001B[A"
+key = "Up"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001A\u001B[B"
+key = "Down"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001A\u001B[C"
+key = "Right"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001A\u001B[D"
+key = "Left"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001Az"
+key = "Return"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001A["
+key = "S"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001An"
+key = "Right"
+mods = "Command|Shift"
+
+[[keyboard.bindings]]
+chars = "\u001Ap"
+key = "Left"
+mods = "Command|Shift"
+
+[[keyboard.bindings]]
+chars = "\u001Ax"
+key = "X"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001A\\"
+key = "W"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001Ac"
+key = "+"
+mods = "Command|Shift"
+
+[[keyboard.bindings]]
+chars = "\u001A\""  # split horizonal
+key = "_"
+mods = "Command|Shift"
+
+[[keyboard.bindings]]
+chars = "\u001A%"
+key = "|"
+mods = "Command|Shift"
+
+[[keyboard.bindings]]
+action = "ToggleSimpleFullscreen"
+key = "Slash"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "ScrollPageUp"
+key = "PageUp"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "ScrollPageDown"
+key = "PageDown"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "ScrollToBottom"
+key = "End"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "ScrollToTop"
+key = "Home"
+mods = "Shift"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[terminal.shell]
+args = ["new-session", "-A", "-s", "0"]
+program = "/opt/homebrew/bin/tmux"
+
+[window.padding]
+x = 7
+y = 7
+
+[terminal]
