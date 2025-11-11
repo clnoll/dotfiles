@@ -230,10 +230,6 @@
         "command": "workbench.action.showPreviousWindowTab"
     },
     {
-        "key": "ctrl+k",
-        "command": "emacs-mcx.paredit.pareditKill"
-    },
-    {
         "key": "ctrl+x f",
         "command": "settings.cycle.formatOnSave",
         "when": "editorFocus"

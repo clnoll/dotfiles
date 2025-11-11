@@ -26,10 +26,10 @@
     # color-only = true
     features = collared-trogon
     color-moved = true
-    side-by-side = false
+    # side-by-side = true
     navigate = true
     hyperlinks = true
-    hyperlinks-file-link-format = "pycharm://open?file={path}&line={line}"
+    hyperlinks-file-link-format = "idea://open?file={path}&line={line}"
     line-numbers = true
     # grep-match-style = ...
     grep-match-file-style = blue
@@ -46,3 +46,7 @@
     # per https://git-scm.com/docs/git#Documentation/git.txt-codeGITCONFIGGLOBALcode
 [init]
 	defaultBranch = main
+
+
+[url "ssh://git@github.com/"]
+     insteadOf = https://github.com/

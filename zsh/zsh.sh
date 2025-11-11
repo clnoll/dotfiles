@@ -1,6 +1,6 @@
 ### oh-my-zsh config
 export ZSH="/Users/catherine/.oh-my-zsh"
-plugins=(git)
+plugins=(git kube-ps1)
 source $ZSH/oh-my-zsh.sh
 
 
@@ -47,11 +47,13 @@ export DOCKER_BUILD_PLATFORM=linux/arm64
 export DOCKER_BUILD_ARCH=arm64
 export ALPINE_IMAGE=arm64v8/alpine:3.14
 export POSTGRES_IMAGE=arm64v8/postgres:13-alpine
-export JDK_VERSION=17
-
 
 function pycharm() {
     /Applications/PyCharm.app/Contents/MacOS/pycharm "$@" 1>/dev/null 2>/dev/null
+}
+
+function kctx() {
+  kubectx | fzf | xargs kubectx
 }
 
 export NVM_DIR="$HOME/.nvm"
