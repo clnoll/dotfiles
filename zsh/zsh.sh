@@ -1,5 +1,5 @@
 ### oh-my-zsh config
-export ZSH="/Users/catherine/.oh-my-zsh"
+export ZSH="/Users/catherinenoll/.oh-my-zsh"
 plugins=(git kube-ps1)
 source $ZSH/oh-my-zsh.sh
 
@@ -10,8 +10,11 @@ source ~/dotfiles/lib.sh
 
 
 export HISTFILE=~/.eternal_shell_history
-export PATH=/opt/X11/bin:~/.cargo/bin:/Applications/SnowSQL.app/Contents/MacOSå:$PATH
+
+export PATH=/opt/X11/bin:~/.cargo/bin:$PATH
+export PATH=~/.local/bin:$PATH
 export PATH=~/bin:/opt/homebrew/opt/coreutils/libexec/gnubin:/opt/homebrew/bin:$PATH
+
 export SHELL=/opt/homebrew/bin/zsh
 export TMUX_EXECUTABLE=/opt/homebrew/bin/tmux
 export GIT_CONFIG_GLOBAL=~/dotfiles/gitconfig
@@ -39,9 +42,6 @@ function insert-fzf-path-in-command-line() {
 zle -N insert-fzf-path-in-command-line
 bindkey "^F" insert-fzf-path-in-command-line
 
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
-
 export PATH=/opt/homebrew/opt/node@16/bin:$PATH
 export DOCKER_BUILD_PLATFORM=linux/arm64
 export DOCKER_BUILD_ARCH=arm64
@@ -59,3 +59,5 @@ function kctx() {
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+. "$HOME/.local/bin/env"

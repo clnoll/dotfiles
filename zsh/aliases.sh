@@ -29,7 +29,7 @@ alias denv='docker-machine-env-docker'
 
 mv-downcase () { local f=`mktemp -u`; mv "$1" "$f" && mv "$f" $(tr "[:upper:]" "[:lower:]" <<< "$1"); }
 
-alias e="emacsclient -n"
+alias e="emacs-magit-status"
 alias ep='emacs_pipe'
 alias ee="emacs -nw -q"
 alias ef='efind'
