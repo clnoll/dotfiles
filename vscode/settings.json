@@ -4,16 +4,23 @@
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
-    "workbench.activityBar.visible": false,
-    "python.languageServer": "Pylance",
     "editor.quickSuggestionsDelay": 10000,
     "editor.fontSize": 11.5,
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
     },
-    "python.formatting.provider": "black",
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false
+    },
+    "python.defaultInterpreterPath": "/Users/catherinenoll/.local/bin/python3",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.diagnosticMode": "workspace",
     "editor.inlineSuggest.enabled": true,
+    "editor.multiCursorModifier": "ctrlCmd",
     "rust-analyzer.inlayHints.typeHints.enable": false,
     "github.copilot.enable": {
         "*": true,
@@ -23,14 +30,9 @@
         "properties": false,
         "rust": false
     },
-    "editor.multiCursorModifier": "ctrlCmd",
     "cmake.configureOnOpen": true,
     "workbench.colorTheme": "nushell",
     "workbench.editor.untitled.hint": "hidden",
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.python",
-        "editor.formatOnType": true
-    },
     "errorLens.enabled": false,
     "settings.cycle": [
         {
@@ -58,5 +60,8 @@
             ]
         }
     ],
-    "go.toolsManagement.autoUpdate": true
+    "go.toolsManagement.autoUpdate": true,
+    "workbench.activityBar.location": "hidden",
+    "editor.inlineSuggest.edits.showCollapsed": true,
+    "editor.inlineSuggest.showToolbar": "never"
 }

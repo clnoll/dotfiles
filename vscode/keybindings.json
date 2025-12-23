@@ -238,5 +238,9 @@
         "key": "ctrl+x e",
         "command": "settings.cycle.errorLens",
         "when": "editorFocus"
+    },
+    {
+        "key": "cmd+t cmd+t",
+        "command": "editor.cpp.toggle"
     }
 ]
