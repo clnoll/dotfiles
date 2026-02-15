@@ -23,6 +23,8 @@ export GIT_SEQUENCE_EDITOR=emacsclient
 export GH_PAGER=delta
 export POETRY_VIRTUALENVS_IN_PROJECT=true
 
+export WORMHOLE_PATH=~/projects:~/src
+
 export EDITOR="emacs -nw -q"
 
  [ -n "$TMUX" ] && $TMUX_EXECUTABLE set-option prefix C-z >/dev/null
@@ -59,5 +61,7 @@ function kctx() {
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+eval "$(wormhole completion zsh)"
+
 
 . "$HOME/.local/bin/env"
