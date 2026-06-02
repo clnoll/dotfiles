@@ -63,3 +63,5 @@ eval "$(wormhole completion zsh)"
 
 
 . "$HOME/.local/bin/env"
+
+export RGI_EDITOR=cursor
