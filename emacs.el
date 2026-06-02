@@ -1,4 +1,5 @@
 (package-initialize)
+(add-to-list 'exec-path "/opt/homebrew/bin")
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 
 (use-package emacs
