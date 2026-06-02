@@ -1,8 +1,6 @@
-### oh-my-zsh config
-export ZSH="/Users/catherinenoll/.oh-my-zsh"
-plugins=(git kube-ps1)
-source $ZSH/oh-my-zsh.sh
-
+autoload -U colors && colors
+autoload -Uz compinit && compinit
+setopt PROMPT_SUBST
 
 source ~/dotfiles/zsh/prompt.sh
 source ~/dotfiles/zsh/aliases.sh
