@@ -5,7 +5,7 @@ require("hs.notify")
 
 
 -- Load wormhole module from wormhole repo
-package.path = package.path .. ";/Users/catherinenoll/src/3p/wormhole/hammerspoon/?.lua"
+package.path = package.path .. ";/Users/catherine/src/3p/wormhole/hammerspoon/?.lua"
 local wormhole = require("wormhole")
 
 -- Terminal toggle
