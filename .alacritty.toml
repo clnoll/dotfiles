@@ -114,6 +114,19 @@ multiplier = 3
 args = ["new-session", "-A", "-s", "0"]
 program = "/opt/homebrew/bin/tmux"
 
+[[hints.enabled]]
+command = "open"
+hyperlinks = true
+regex = "(https:|http:|file:|file-line-column:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-<>\"\\s{-}\\^⟨⟩`]+"
+
+[hints.enabled.binding]
+key = "Period"
+mods = "Command"
+
+[hints.enabled.mouse]
+enabled = true
+mods = "Command"
+
 [window.padding]
 x = 7
 y = 7
