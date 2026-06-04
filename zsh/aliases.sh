@@ -166,6 +166,7 @@ alias tail-messages='tail -f /var/log/messages'
 alias v=vpn
 alias vssh='vagrant ssh'
 alias vpro='vagrant provision'
+alias w='wormhole'
 
 alias hist='tac ~/.eternal_shell_history'
 
