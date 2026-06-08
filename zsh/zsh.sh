@@ -21,7 +21,7 @@ export GIT_SEQUENCE_EDITOR=emacsclient
 export GH_PAGER=delta
 export POETRY_VIRTUALENVS_IN_PROJECT=true
 
-export WORMHOLE_PATH=~/projects:~/src
+export WORMHOLE_SEARCH_PATHS=~/projects:~/src
 
 export EDITOR="emacs -nw -q"
 
