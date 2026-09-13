@@ -9,12 +9,12 @@ card_commands = [
     "git log --format='%an|%ar|%s' -n 3 | awk -F'|' '{split($1,a,\" \"); gsub(/ ago$/,\"\",$2); printf \"%-10s %-15s %s\\n\", a[1], $2, $3}'",
 ]
 
-# Rules linking further branches to a task, so a stack of branches worked on
-# in one worktree stays one task. Each is a regex tested against a branch
-# name; `{task}` stands for the task's branch (regex-escaped). With this rule,
-# `catherine-async-assets-demo` belongs to `internal:catherine-async-assets`,
-# and the task keeps that identity even after the base branch is deleted.
-# Re-read by `wormhole refresh`.
-branch_rules = [
-    "^{task}[-/.]",
+[project_branches]
+"*" = ["/^{project}[-/.].*/"]
+
+
+[project_layout]
+"*" = [
+    { split = "right", command = "claude" },
 ]
+
