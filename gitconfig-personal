@@ -1,0 +1,4 @@
+# Included by gitconfig for personal repos listed in its includeIf entries.
+# Everything else on this machine defaults to the work email.
+[user]
+	email = noll.catherine@gmail.com

@@ -1,0 +1,11 @@
+[general]
+diff_colorizer.enabled = true
+diff_colorizer.command = ["delta", "--width", "{width}"]
+
+[bindings]
+root.move_up = ["ctrl+up"]
+root.move_down = ["ctrl+down"]
+root.move_up_line = ["up"]
+root.move_down_line = ["down"]
+
+root.discard = ["k"]

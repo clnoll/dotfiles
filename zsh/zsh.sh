@@ -17,13 +17,14 @@ export SHELL=/opt/homebrew/bin/zsh
 export TMUX_EXECUTABLE=/opt/homebrew/bin/tmux
 export GIT_CONFIG_GLOBAL=~/dotfiles/gitconfig
 export BAT_THEME=Dracula
-export GIT_SEQUENCE_EDITOR=emacsclient
 export GH_PAGER=delta
 export POETRY_VIRTUALENVS_IN_PROJECT=true
+export CLAUDE_CODE_DISABLE_FEEDBACK_SURVEY=1
 
 export WORMHOLE_SEARCH_PATHS=~/projects:~/src
 
-export EDITOR="emacs -nw -q"
+export GIT_SEQUENCE_EDITOR="gitu sequence-editor"
+export EDITOR="cursor -g"
 
  [ -n "$TMUX" ] && $TMUX_EXECUTABLE set-option prefix C-z >/dev/null
 
@@ -65,3 +66,6 @@ eval "$(wormhole completion zsh)"
 . "$HOME/.local/bin/env"
 
 export RGI_EDITOR=cursor
+
+# Atuin — magic shell history (coexists with HISTFILE eternal history above)
+eval "$(atuin init zsh --disable-up-arrow)"

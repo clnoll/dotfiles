@@ -13,6 +13,10 @@
     attributesfile = /Users/catherine/dotfiles/.gitattributes
     pager = delta
 
+[pager]
+    diff = gitu --pager
+    show = gitu --pager
+    log = gitu --pager
 [interactive]
     diffFilter = delta --color-only
 
@@ -50,3 +54,7 @@
 
 [url "ssh://git@github.com/"]
      insteadOf = https://github.com/
+[includeIf "gitdir:/Users/catherine/src/dotfiles/"]
+	path = /Users/catherine/dotfiles/gitconfig-personal
+[includeIf "gitdir:/Users/catherine/src/3p/"]
+	path = /Users/catherine/dotfiles/gitconfig-personal
