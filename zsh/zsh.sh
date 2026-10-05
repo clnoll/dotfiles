@@ -66,6 +66,12 @@ eval "$(wormhole completion zsh)"
 . "$HOME/.local/bin/env"
 
 export RGI_EDITOR=cursor
+plugins=(git nvm)
+export NVM_DIR="/Users/catherine/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh" # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+export KUBECONFIG=~/.kube/config
+export WORMHOLE_SEARCH_PATHS=$WORMHOLE_SEARCH_PATHS:~/src/dagster-repos
 
 # Atuin — magic shell history (coexists with HISTFILE eternal history above)
 eval "$(atuin init zsh --disable-up-arrow)"

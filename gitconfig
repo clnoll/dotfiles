@@ -15,9 +15,9 @@
     editor = cursor -g --wait
 
 [pager]
-    diff = gitu --pager
-    show = gitu --pager
-    log = gitu --pager
+    diff = delta --gitu --pager
+    show = delta --gitu --pager
+    log = delta --gitu --pager
 
 [interactive]
     diffFilter = delta --color-only
@@ -30,7 +30,7 @@
 
 [delta]
     # color-only = true
-    features = collared-trogon
+    features = "Catppuccin Mocha"
     color-moved = true
     # side-by-side = true
     navigate = true

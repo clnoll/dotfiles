@@ -1,6 +1,7 @@
 [general]
-diff_colorizer.enabled = true
-diff_colorizer.command = ["delta", "--width", "{width}"]
+diff_renderer.enabled = true
+diff_renderer.command = ["delta"]
+diff_renderer.feature_keys = { line-numbers = "L", keep-plus-minus-markers = "C", side-by-side = "S" }
 
 [bindings]
 root.move_up = ["ctrl+up"]
