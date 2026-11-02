@@ -1,3 +1,5 @@
+editor = "code"
+
 search_paths = [
     "/Users/catherine/projects",
     "/Users/catherine/src",

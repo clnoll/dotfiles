@@ -24,7 +24,7 @@ export CLAUDE_CODE_DISABLE_FEEDBACK_SURVEY=1
 export WORMHOLE_SEARCH_PATHS=~/projects:~/src
 
 export GIT_SEQUENCE_EDITOR="gitu sequence-editor"
-export EDITOR="cursor -g"
+export EDITOR="code -g"
 
  [ -n "$TMUX" ] && $TMUX_EXECUTABLE set-option prefix C-z >/dev/null
 
@@ -65,7 +65,7 @@ eval "$(wormhole completion zsh)"
 
 . "$HOME/.local/bin/env"
 
-export RGI_EDITOR=cursor
+export RGI_EDITOR=code
 plugins=(git nvm)
 export NVM_DIR="/Users/catherine/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh" # This loads nvm

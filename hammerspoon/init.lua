@@ -22,9 +22,9 @@ local function terminal()
     end
 end
 
--- Cursor toggle
-local function cursor()
-    local app = hs.application.find("Cursor")
+-- VS Code toggle
+local function vscode()
+    local app = hs.application.find("com.microsoft.VSCode")
     if app then
         if app:isFrontmost() then
             app:hide()
@@ -32,7 +32,7 @@ local function cursor()
             app:activate()
         end
     else
-        hs.application.launchOrFocus("/Applications/Cursor.app")
+        hs.application.launchOrFocus("/Applications/Visual Studio Code.app")
     end
 end
 
@@ -44,7 +44,7 @@ local keymap = {
 -- Keybindings
 wormhole.bindKeys(keymap)
 hs.hotkey.bind({}, "f16", terminal)
-hs.hotkey.bind({}, "f17", cursor)
+hs.hotkey.bind({}, "f17", vscode)
 hs.hotkey.bind({ "cmd", "alt" }, "r", function()
     hs.reload()
 end)

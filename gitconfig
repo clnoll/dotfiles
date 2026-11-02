@@ -12,7 +12,7 @@
 [core]
     attributesfile = /Users/catherine/dotfiles/.gitattributes
     pager = delta
-    editor = cursor -g --wait
+    editor = code -g --wait
 
 [pager]
     diff = delta --gitu --pager

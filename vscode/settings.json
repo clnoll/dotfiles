@@ -58,7 +58,22 @@
     ],
     "go.toolsManagement.autoUpdate": true,
     "workbench.activityBar.location": "hidden",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
     "editor.inlineSuggest.edits.showCollapsed": true,
     "editor.inlineSuggest.showToolbar": "never",
-    "cursorpyright.analysis.typeCheckingMode": "basic"
+    "cursorpyright.analysis.typeCheckingMode": "basic",
+    "security.promptForLocalFileProtocolHandling": false,
+    "cursor.cpp.disabledLanguages": [
+        "markdown",
+        "plaintext",
+        "python"
+    ],
+    "ruff.path": [
+        "/Users/catherine/.local/bin/ruff"
+    ],
+    // Files opened from outside the window's workspace folder (e.g. a wormhole link into another
+    // worktree) don't get the project's pyproject.toml, so ruff falls back to these editor
+    // settings. Keep project config first, and make the fallback match the dagster repos (100).
+    "ruff.configurationPreference": "filesystemFirst",
+    "ruff.lineLength": 100
 }
